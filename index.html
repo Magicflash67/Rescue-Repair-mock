@@ -1,1 +1,103 @@
-<h1> This is a mock website for rescue repair. Do not take anything seriouly this is a prof of concept</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    h3 {color:color:DeepSkyBlue}
+
+ p {color:#FFFFFF}
+
+  dl {border: 7px solid DodgerBlue;}
+
+  dd{color:LightGray}
+
+  dt {color:#FFFFFF}
+  h1{ color:DeepSkyBlue}
+a {color:Aqua}
+  </style>
+</head>
+<body style="background-color:#4A2E94"> 
+  <h1>Welcom To Rescue Repair Mock Website</h1>
+  <table>
+    <tr>
+      <th><a> quick links:</a></th>
+      <th><a href="index.html">Home</a></th>
+      <th><a href="AboutUs.html">About us</a></th> 
+      <th><a href="shop.html">Shop</a></th>
+      <th><a href="contact.html">Contact Us</a></th>
+      <th><a href="shipping.html">shipping information</a></th>
+    </tr>
+  </table>
+
+  <hr> 
+  <h2 style="color:deepskyblue">Who Are We? We Are Rescue Repair</h2>
+<p style="border: 7px solid dodgerblue;">At Rescue Repair, we're not just a company, we're a team of tech enthusiasts on a mission to bring cherished memories back to life. Founded in Wisconsin in 2024, we're all about preserving the magic of retro gadgets and vintage age tech. From our online headquarters and company, we pour our hearts and smarts into restoring and repairing beloved treasures like Game Boys, PlayStation consoles, and a whole host of retro gems. We're not just in the business of fixing up old tech; we're in the business of reviving joy and nostalgia. At Rescue Repair, we're honored to be a part of keeping the spirit of timeless innovation alive, one repair at a time.</p>
+<hr>
+<h2 style="color:DeepSkyBlue">Our Vision</h2>
+  <p style="border: 7px solid DodgerBlue;">At Rescue Repair, our vision is to be the go-to destination for retro tech enthusiasts seeking expert repairs and restorations. We strive to be the trusted name in preserving and revitalizing classic technology, ensuring that the joy and nostalgia of retro gaming and vintage electronics continue to thrive. With our dedicated team of tech enthusiasts, we are committed to upholding the legacy of iconic devices and providing exceptional service to our customers. Our goal is to be the bridge between the past and the present, allowing future generations to experience the magic of timeless innovation.</p>
+<hr>
+<h2
+  <hr>
+
+  <h3 style="color:DeepSkyBlue"> What we do</h3>
+  <button onclick='changeContent("General")'>General Repair</button>
+  <button onclick='changeContent("DS")'>Nintendo DS Family</button>
+  <button onclick='changeContent("GB")'>Nintendo Gameboy Family</button>
+  <button onclick='changeContent("NC")'>Nintendo Console Family</button>
+  <button onclick='changeContent("PS")'>Play staion family</button>
+ <button onclick='changeContent("PSH")'>Play staion handheld</button>
+  <dl id="demo" style="border: 7px solid DodgerBlue;">
+    <dt>Genreal repair</dt>
+    <dd>- We reapir anything no matter the age, company or issue, 100% of your moneyback. click the buttons above to learn we what do about a topic</dd>
+    <dt>modding</dt>
+    <dd>- we sell and do (legal) mods/modifaction on any deive appicalble</dd>
+  </dl>
+  <hr> 
+
+ <script>
+  function changeContent(type) {
+    var demo = document.getElementById('demo');
+    var dtElements = demo.getElementsByTagName('dt');
+    var ddElements = demo.getElementsByTagName('dd');
+
+    if (type === "General") {
+      dtElements[0].textContent = "A bit of What we can do";
+      ddElements[0].textContent = "we can do anything from shell replacements, battery fix, ";
+      dtElements[1].textContent = "A bit of (we only do legal) Mods we can do";
+      ddElements[1].textContent = "we can do RGB integration, better fan, better screen, DS capture cards";
+    
+    } else if (type === "DS") {
+      dtElements[0].textContent = "What we do for DS";
+      ddElements[0].textContent = "we mainly do shell replacements, screen fixes, and general wire and solder reconnectivity";
+      dtElements[1].textContent = "A bit of Mods we can do for a DS/3DS";
+      ddElements[1].textContent = "DS lite micros, DS/3DS capture cards";
+    
+    } else if (type === "GB") {
+      dtElements[0].textContent = "What we do for GameBoy, GameBoyAdvanced, And GameBoySP";
+      ddElements[0].textContent = "we mainly do shell replacements, screen replacements, wired connection issues, we also do Game battire replacements";
+      dtElements[1].textContent = "A bit of Mods we can do GameBoy, GameBoyAdvanced, And GameBoySP";
+      ddElements[1].textContent = "capture cards, backliights, new screen, rechargeable battery";
+    
+    } else if (type === "NC") {
+      dtElements[0].textContent = "What we do NES, SNES, N64, wiis";
+      ddElements[0].textContent = "we work on making your console working back to 100%, or your money back, we also do controller repairs, mmay that be a new shell to better buttons";
+      dtElements[1].textContent = "A bit of Mods we NES, SNES, N64, wiis";
+      ddElements[1].textContent = "we do controller modifactions, controller shell replacements";
+    
+    }  else if (type === "PS") {
+      dtElements[0].textContent = "What we do for Playstion 1, 2 ,3";
+      ddElements[0].textContent = "we work on making your console working back to 100%, or your money back, we also do controller repairs, disk repair ";
+      dtElements[1].textContent = "A bit of Mods we Playstion 1, 2 ,3";
+      ddElements[1].textContent = "we do controller RGB interagtion ";
+    
+    }  else if (type === "PSH") {
+      dtElements[0].textContent = "What we do All the Playsation portabless";
+      ddElements[0].textContent = "we work on making your game working back to 100%, or your money back,new shells,better buttons, better screen.";
+      dtElements[1].textContent = "A tiny bit of mods for the plastaion portables";
+      ddElements[1].textContent = "RGB intergation";
+    
+    }
+  }
+</script>
+
+</body>
+</html>
